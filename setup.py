@@ -7,12 +7,7 @@ setup(
     install_requires=[
         'django',
     ],
-    package_data={
-        'mysite.apps.personal': ['templates/*/*'],
-        'mysite.apps.blog': ['templates/*/*'],
-        'mysite.apps.personal': ['static/*/**'],
-        'mysite.apps.blog': ['static/*/**'],
-    },
+    include_package_data=True,
     entry_points={
         'console_scripts': [
             'mysiteadmin=mysite.manage:main',
