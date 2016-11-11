@@ -7,6 +7,7 @@ RUN pip install uwsgi
 RUN pip install supervisor
 RUN pip install supervisor_checks
 RUN pip install supervisor-stdout
+RUN pip install setuptools_git
 RUN export LC_ALL=C.UTF-8
 RUN export LANG=C.UTF-8
 # pull package
