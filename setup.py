@@ -6,5 +6,10 @@ setup(
     packages=find_packages(),
     install_requires=[
         'django',
-    ]
+    ],
+    entry_points={
+        'console_scripts': [
+            'mysiteadmin=mysite.manage:main',
+        ],
+    },
 )
