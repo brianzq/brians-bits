@@ -10,5 +10,10 @@ setup(
     package_data={
         'mysite.apps.personal': ['templates/*/*'],
         'mysite.apps.blog': ['templates/*/*']
-    }
+    },
+    entry_points={
+        'console_scripts': [
+            'mysiteadmin=mysite.manage:main',
+        ],
+    },
 )
