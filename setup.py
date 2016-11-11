@@ -9,9 +9,9 @@ setup(
     ],
     package_data={
         'mysite.apps.personal': ['templates/*/*'],
-        'mysite.apps.blog': ['templates/*/*']
+        'mysite.apps.blog': ['templates/*/*'],
         'mysite.apps.personal': ['static/*/*'],
-        'mysite.apps.blog': ['static/*/*']
+        'mysite.apps.blog': ['static/*/*'],
     },
     entry_points={
         'console_scripts': [
