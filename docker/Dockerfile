@@ -18,8 +18,8 @@ RUN sed -i -e 's@#NAME#@my-site@' /etc/supervisor/conf.d/uwsgi.conf
 COPY ./scripts/uwsgi/uwsgi.ini /data/scripts/uwsgi.ini
 COPY ./scripts/uwsgi/uwsgi_params /data/scripts/uwsgi_params
 RUN sed -i -e 's@#WSGI#@mysite.wsgi:application@' /data/scripts/uwsgi.ini
-#RUN /usr/bin/mysiteadmin migrate
-#RUN /usr/bin/mysiteadmin collectstatic --noinput
+RUN /usr/local/bin/mysiteadmin migrate
+RUN /usr/local/bin/mysiteadmin collectstatic --noinput
 
 CMD ['/usr/bin/supervisord']
 
