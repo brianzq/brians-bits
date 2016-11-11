@@ -121,3 +121,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/data/static/'
+
+ALLOWED_HOSTS = '*'
