@@ -9,14 +9,14 @@ RUN apt-get update -y && apt-get install -y \
     vim
 
 # python packages
-RUN pip install --upgrade pip
-RUN pip install virtualenv
-RUN pip install django
-RUN pip install uwsgi
-RUN pip install supervisor
-RUN pip install supervisor_checks
-RUN pip install supervisor-stdout
-RUN pip install setuptools_git
+# RUN pip install --upgrade pip
+RUN pip3 install virtualenv
+RUN pip3 install django
+RUN pip3 install uwsgi
+RUN pip3 install supervisor
+RUN pip3 install supervisor_checks
+RUN pip3 install supervisor-stdout
+RUN pip3 install setuptools_git
 RUN export LC_ALL=C.UTF-8
 RUN export LANG=C.UTF-8
 
