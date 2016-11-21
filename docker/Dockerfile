@@ -22,7 +22,7 @@ RUN export LC_ALL=C.UTF-8
 RUN export LANG=C.UTF-8
 
 # pull mysite package
-RUN pip install git+https://github.com/brianzq/mysite#egg=mysite-0.1
+RUN pip install git+https://github.com/brianzq/mysite#egg=mysite-0.2
 
 # configuration
 RUN mkdir -p /data/scripts/ /data/static
