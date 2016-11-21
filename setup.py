@@ -7,6 +7,9 @@ setup(
     install_requires=[
         'django',
     ],
+    package_data={
+        'mysite': ['db.sqlite3'],
+    },
     include_package_data=True,
     entry_points={
         'console_scripts': [

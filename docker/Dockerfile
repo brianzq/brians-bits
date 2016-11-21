@@ -4,9 +4,8 @@ FROM ubuntu:latest
 RUN apt-get update -y && apt-get install -y \
     nginx \
     git \
-    python-dev \
-    python-pip \
     python3 \
+    python3-pip \
     vim
 
 # python packages
@@ -22,7 +21,7 @@ RUN export LC_ALL=C.UTF-8
 RUN export LANG=C.UTF-8
 
 # pull mysite package
-RUN pip install git+https://github.com/brianzq/mysite#egg=mysite-0.2
+RUN pip3 install git+https://github.com/brianzq/mysite#egg=mysite-0.1
 
 # configuration
 RUN mkdir -p /data/scripts/ /data/static
