@@ -1,3 +1,6 @@
+.dropdown-backdrop {
+  position: static;
+}
 a {
   color: #B66E73;
 }
