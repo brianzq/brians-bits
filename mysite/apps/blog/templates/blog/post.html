@@ -1,8 +1,10 @@
 {% extends 'personal/header.html' %}
 
 {% block content %}
-    <h1 align="center">{{post.title}}</h1>
-    <h4 align="center" class="text-muted">on {{post.date}}</h4>
+  <container class="post-title-wrapper">
+    <p class="post-title">{{post.title}}</p>
+    <p class="post-date text-muted lead">on {{post.date}}</p>
     <br>
     {{post.body|safe|linebreaks}}
+  </container>
 {% endblock %}
