@@ -91,7 +91,6 @@ a.brand:hover {
 }
 #nav-menu-toggle:hover {
   cursor: pointer;
-  color: #B68386;
 }
 #nav-menu-toggle::before {
   content: "Menu";
