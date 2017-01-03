@@ -177,6 +177,11 @@ a.brand:hover {
   text-align: center;
   padding-bottom: 30px;
 }
+@media (max-width: 768px) {
+  #footer {
+    padding-bottom: 15px;
+  }
+}
 #footer i {
   font-size: 1em;
   color: #4C4C4C;
