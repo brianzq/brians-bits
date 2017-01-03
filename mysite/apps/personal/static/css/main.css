@@ -111,7 +111,6 @@ a.brand:hover {
   margin-left: 15px;
   margin-right: 15px;
   box-shadow: 0px;
-  overflow-y: inherit;
 }
 #nav-menu ul {
   display: inline-block;
