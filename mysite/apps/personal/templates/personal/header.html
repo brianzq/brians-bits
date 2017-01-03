@@ -5,42 +5,42 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-  <title>Brian Zhang</title>
+  <title>Brian's Bits</title>
 
   {% load staticfiles %}
-  <style>@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400')</style>
-  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type = "text/css"/>
   <link rel="stylesheet" href="{% static 'css/main.css' %}" type = "text/css"/>
+  <script src="https://use.fontawesome.com/dbf964d036.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">
-        <span style="color: #4C4C4C">Brian's</span> <span style="color: #AE0118">Bits</span>
-      </a>
-    </div>
+  <div class="container-fluid">
+    <a class="brand" href="/">
+      <span class="brand-brians">Brian's</span> <span class="brand-bits">Bits</span>
+    </a>
+  </div>
 
-    <nav class="navbar">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <botton type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <div style="float: right;">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </div>
-          </botton>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" style="text-align: center;">
-          <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" id="nav-menu-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
+          <div class="float-right">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+        </button>
       </div>
-    </nav>
+      <div id="nav-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
 
 
   <div class="container">
@@ -52,17 +52,16 @@
 
   </div>
 
-<!-- TODO -->
-<!--   <footer>
-    <div class="container-fluid" style="margin-left:15px">
+  <!-- <footer> -->
+    <div id="footer" class="invisible">
       <p>
-        <i class="fa fa-fw fa-globe" style="font-size:16px"></i> <a href="http://brianzhang.info/contact/" target="_self">Contact</a> |
-        <i class="fa fa-fw fa-linkedin" style="font-size:16px;color:#0077B5"></i> <a href="https://www.linkedin.com/in/qiang-brian-zhang-44b66064" target="_blank">LinkedIn</a> |
-        <i class="fa fa-fw fa-github" style="font-size:16px"></i> <a href="https://github.com/brianzq" target="_blank">Github</a> |
-        <i class="fa fa-fw fa-twitter" style="font-size:16px;color:#00aced;"></i> <a href="https://twitter.com/brian_zq" target="_blank">Twitter</a> |
+        <!-- <i class="fa fa-fw fa-globe"></i> <a href="http://brianzhang.info/contact/" target="_self">Contact</a> | -->
+        <i class="fa fa-fw fa-linkedin"></i> <a href="https://www.linkedin.com/in/qiang-brian-zhang-44b66064" target="_blank">LinkedIn</a> |
+        <i class="fa fa-fw fa-github"></i> <a href="https://github.com/brianzq" target="_blank">Github</a> |
+        <i class="fa fa-fw fa-twitter""></i> <a href="https://twitter.com/brian_zq" target="_blank">Twitter</a>
       </p>
     </div>
-  </footer>    -->
+  <!-- </footer>    -->
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
