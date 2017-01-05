@@ -1,0 +1,18 @@
+{% extends 'personal/header.html' %}
+{% load staticfiles %}
+
+{% block content %}
+  <container class="blog-title">
+    {% for project in object_list %}
+      <p>
+        <a href="/projects/{{project.id}}">
+          {{project.title}}
+          <img src="{% static 'projects/img/att-bill-splitter.png' %}" id="projects-index-img" class="img-responsive img-rounded" >
+        </a>
+      </p>
+      
+      <p class="blog-title-date lead">Posted on {{ project.pub_date|date:'Y-m-d' }}</p>
+      <br>
+    {% endfor %}
+  </container>
+{% endblock %}

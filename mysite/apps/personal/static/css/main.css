@@ -24,19 +24,31 @@ body {
   background-color: #efefef;
   color: #4C4C4C;
   padding-top: 20px;
+  font-size: 16px;
 }
 .starter-template {
   /*background-color: #fff;*/
   padding: 20px 20px;
   margin: 0px 40px;
 }
+#projects-index-img {
+    display: block;
+    width: 70%;
+    margin: 15px auto;
+    padding: 0px 10px;
+}
 @media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  #projects-index-img {
+    width: 90%;
+  }
   .starter-template {
     padding: 20px 15px;
     margin: 0px 0px;
   }
 }
-
 /*------------- brand --------------*/
 .brand {
   font-family: 'ChunkFive';

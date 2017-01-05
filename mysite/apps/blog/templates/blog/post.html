@@ -3,7 +3,7 @@
 {% block content %}
   <container class="post-title-wrapper">
     <p class="post-title">{{post.title}}</p>
-    <p class="post-date text-muted lead">on {{post.date}}</p>
+    <p class="post-date text-muted lead">on {{post.pub_date}}</p>
     <br>
     {{post.body|safe|linebreaks}}
   </container>

@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.views.generic import ListView, DetailView
 from mysite.apps.blog.models import Post
-
+import mysite.apps.blog.views as views
 
 urlpatterns = [
     url(r'^$', ListView.as_view(
-        queryset=Post.objects.all().order_by('-date')[:25],
+        queryset=Post.objects.all().order_by('-pub_date')[:25],
         template_name='blog/blog.html'
     )),
     url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Post,

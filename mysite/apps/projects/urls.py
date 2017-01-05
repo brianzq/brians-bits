@@ -1,4 +1,5 @@
 """mysite URL Configuration
+
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
 Examples:
@@ -12,12 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import include, url
-from django.contrib import admin
+from django.conf.urls import url, include
+from django.views.generic import ListView, DetailView
+from mysite.apps.projects.models import Project
+
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('mysite.apps.personal.urls', namespace='personal')),
-    url(r'^blog/', include('mysite.apps.blog.urls')),
-    url(r'^projects/', include('mysite.apps.projects.urls')),
+    url(r'^$', ListView.as_view(
+        queryset=Project.objects.all().order_by('-pub_date')[:25],
+        template_name='projects/projects_index.html'
+    )),
+    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Project,
+                                             template_name='projects/project.html'))
 ]

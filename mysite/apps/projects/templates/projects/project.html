@@ -1,0 +1,10 @@
+{% extends 'personal/header.html' %}
+
+{% block content %}
+  <container class="post-title-wrapper">
+    <p class="post-title">{{project.title}}</p>
+    <p class="post-date text-muted lead">on {{project.pub_date}}</p>
+    <br>
+    {{project.body|safe|linebreaks}}
+  </container>
+{% endblock %}

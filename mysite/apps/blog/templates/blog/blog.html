@@ -4,7 +4,7 @@
   <container class="blog-title">
     {% for post in object_list %}
       <p><a href="/blog/{{post.id}}"> {{post.title}}</a></font></p>
-      <p class="blog-title-date lead">Posted on {{ post.date|date:'Y-m-d' }}</font></p>
+      <p class="blog-title-date lead">Posted on {{ post.pub_date|date:'Y-m-d' }}</font></p>
       <br>
     {% endfor %}
   </container>
