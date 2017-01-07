@@ -1,10 +1,21 @@
 {% extends 'personal/header.html' %}
-
+{% load staticfiles %}
+{% block extra_head}
+<link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
 {% block content %}
-  <container class="post-title-wrapper">
-    <p class="post-title">{{post.title}}</p>
-    <p class="post-date text-muted lead">on {{post.pub_date}}</p>
+  <container id="post">
+    <p class="post-title">{{ post.title }}</p>
+    <p class="post-date text-muted lead">on {{ post.pub_date }}</p>
     <br>
-    {{post.body|safe|linebreaks}}
+    {{ post.body|safe }}
   </container>
+
+  <!-- SyntaxHighlighter JavaScript
+    ================================================== -->  
+  <script src="{% static 'js/syntaxhighlighter.js' %}" />
+  <script>
+    syntaxhighlighterConfig = {
+      className: 'eclipse'
+    };
+  </script>
 {% endblock %}
