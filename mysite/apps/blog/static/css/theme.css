@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 .syntaxhighlighter a,
 .syntaxhighlighter div,
 .syntaxhighlighter code,
@@ -16,7 +17,7 @@
   float: none !important;
   height: auto !important;
   left: auto !important;
-  line-height: 1.1em !important;
+  line-height: 1.2em !important;
   margin: 0 !important;
   outline: 0 !important;
   overflow: visible !important;
@@ -28,7 +29,7 @@
   vertical-align: baseline !important;
   width: auto !important;
   box-sizing: content-box !important;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+  font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
   font-weight: normal !important;
   font-style: normal !important;
   font-size: 1em !important;
@@ -36,6 +37,8 @@
   min-height: auto !important; }
 
 .syntaxhighlighter {
+  border: 1px solid #ccc;
+  border-radius: 4px;
   width: 100% !important;
   margin: 1em 0 1em 0 !important;
   position: relative !important;
@@ -166,11 +169,12 @@
     color: black !important; }
 
 .syntaxhighlighter {
-  background-color: #fff !important; }
+  padding: 0.6em 0 !important;
+  background-color: #f5f5f5 !important; }
   .syntaxhighlighter .line.alt1 {
-    background-color: #fff !important; }
+    background-color: #f5f5f5 !important; }
   .syntaxhighlighter .line.alt2 {
-    background-color: #fff !important; }
+    background-color: #f5f5f5 !important; }
   .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
     background-color: #c3defe !important; }
   .syntaxhighlighter .line.highlighted.number {
@@ -181,9 +185,10 @@
     background: #fff;
     color: black; }
   .syntaxhighlighter .gutter {
-    color: #787878 !important; }
+    background-color: #3f3f3f !important;
+    color: #787878 !important;  }
     .syntaxhighlighter .gutter .line {
-      border-right: 3px solid #d4d0c8 !important; }
+      border-right: 2px solid #d4d0c8 !important; }
       .syntaxhighlighter .gutter .line.highlighted {
         background-color: #d4d0c8 !important;
         color: #fff !important; }
