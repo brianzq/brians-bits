@@ -228,10 +228,9 @@ a.brand:hover {
 /*------------- post --------------*/
 #post .post-title{
   text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 6px;
-  color: #4C4C4C;
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  /*color: #4C4C4C;*/
 }
 #post .post-date{
   text-align: center;
