@@ -1,7 +1,15 @@
 {% extends 'personal/header.html' %}
 {% load staticfiles %}
-{% block extra_head}
+
+<!-- Extra head block-->
+{% block extra_head %}
 <link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endblock extra_head %}
+
+<!-- Content block -->
 {% block content %}
   <container id="post">
     <p class="post-title">{{ post.title }}</p>
@@ -19,4 +27,4 @@
     };
   </script>
 
-{% endblock %}
+{% endblock content %}
