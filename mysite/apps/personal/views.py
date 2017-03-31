@@ -8,5 +8,5 @@ def index(request):
 def contact(request):
     return render(request, 'personal/basic.html', {
         'content': ['If you would like to contact me, please email me',
-                    'leapingzhang@gmail.com']
+                    'leapingzhang at gmail dot com']
     })

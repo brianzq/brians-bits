@@ -1,6 +1,7 @@
 /*------------- fonts --------------*/
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Molengo');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Molengo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @font-face {
   font-family: ChunkFive;
   src: url('../fonts/Chunk.otf');
@@ -12,25 +13,22 @@
 
 /*------------- global --------------*/
 a {
-  color: #C07B84;
+  color: #AE0118;
 }
 a:hover {
-  color: #AE0118;
+  color: #C07B84;
 }
 .float-right {
   float: right;
 }
 body {
   font-family: 'Lato', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   background-color: #efefef;
-  color: #2C2C2C;
+  color: #101010;
   padding-top: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.starter-template {
-  padding: 20px 20px;
-  margin: 0px 40px;
+  font-size: 17px;
+  line-height: 1.6em;
 }
 #projects-index-img {
     display: block;
@@ -45,14 +43,46 @@ body {
   #projects-index-img {
     width: 90%;
   }
-  .starter-template {
-    padding: 20px 15px;
-    margin: 0px 0px;
-  }
 }
 li.less-indent {
   margin-left: -20px;
 }
+
+/* headers */
+h3 {
+  margin-top: 50px;
+}
+h4 {
+  margin-top: 30px;
+}
+h5 {
+  margin-top: 20px;
+}
+
+/*------------- home --------------*/
+#homeblock {
+  margin-top: 80px;
+}
+#avatar {
+  margin: auto 20px;
+  max-width: 211px;
+  border-radius: 200px;
+  box-sizing: border-box;
+  background-color: #DDD;
+  border: 2px solid #AE0118;
+}
+@media (max-width: 992px) {
+  #avatar {
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+  }
+  #homeblock {
+    margin-top: 10px;
+  }
+}
+
 
 /*------------- brand --------------*/
 .brand {
@@ -204,7 +234,7 @@ a.brand:hover {
 }
 /*------------- blog --------------*/
 .blog-title {
-  text-align: center;
+  /*text-align: center;*/
 }
 .blog-title p {
   margin-bottom: 2px;

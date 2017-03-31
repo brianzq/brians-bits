@@ -1,8 +1,21 @@
 {% extends "personal/header.html" %}
 <!-- {% load staticfiles %} -->
 {% block content %}
-<!--   <div class="container-fluid">
-    <img src="{% static 'personal/img/avatar.png' %}" class="responsive-img">
+  <div id="homeblock">
+    <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2"></div>
+    <div class="col-xs-8 col-sm-8 col-md-4 col-lg-3">
+      <div id="avatar">
+        <img src="{% static 'personal/img/avatar.png' %}" class="img-responsive img-circle center-block">
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-2 hidden-md hidden-lg"></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+      <p>I'm Brian Zhang, a data scientist who enjoys thinking about ins and outs of machine learning models, probability distributions and vector spaces, a self-taught engineer who loves building things and refactoring my ugly code from a year ago.</p>
+
+      <p>I'm currently reading <a href="https://statweb.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning</a> and I get inspired by <a href="/blog/11">these podcasts</a>.</p>
+
+      <p>In my spare time, I play <a href="https://www.2k.com/games/nba-2k17">NBA2k17</a> and here is my <a href="http://2kmtcentral.com/17/lineups/552180/mylineup">current lineup</a> in MyTEAM.</p>
+    </div>
+    <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
   </div>
- -->  <p>At least you know where to find me...</p>
 {% endblock %}
