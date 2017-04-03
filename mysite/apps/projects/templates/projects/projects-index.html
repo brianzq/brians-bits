@@ -1,0 +1,19 @@
+{% extends 'personal/header.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="slide-down-fade-in">
+    {% for project in object_list %}
+      <div class="col-md-6 col-lg-6 text-center">
+        <a class="projects-index-img" href="/projects/{{project.id}}" target="_blank">
+          <p><img src="{% static project.img.url %}" id="projects-index-img" class="img-responsive img-rounded"></p>
+        </a>
+          <br>
+        <p class="blog-title"> {{ project.title }} </p>
+        <p class="blog-desc"> {{ project.desc }} </p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+{% block extra_script %}
+  <script src="{% static 'js/blog.js' %}"></script>
+{% endblock extra_script %}

@@ -19,10 +19,7 @@ from mysite.apps.projects.models import Project
 
 
 urlpatterns = [
-    url(r'^$', ListView.as_view(
-        queryset=Project.objects.all().order_by('-pub_date')[:25],
-        template_name='projects/projects_index.html'
-    )),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Project,
-                                             template_name='projects/project.html'))
+    url(r'^$', ListView.as_view(queryset=Project.objects.all().order_by('-pub_date')[:25],
+                                template_name='projects/projects-index.html')),
+    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Project, template_name='projects/project.html'))
 ]

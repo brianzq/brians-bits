@@ -1,13 +1,14 @@
 {% extends 'personal/header.html' %}
 {% load staticfiles %}
-{% block extra_head}
-<link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
+{% endblock extra_head %}
 {% block content %}
   <container id="post">
-    <p class="post-title">{{project.title}}</p>
-    <p class="post-date text-muted lead">on {{project.pub_date}}</p>
+    <p class="post-title">{{ project.title }}</p>
+    <p class="post-date text-muted lead">on {{ project.pub_date }}</p>
     <br>
-    {{project.body|safe|linebreaks}}
+    {{ project.body|safe|linebreaks }}
   </container>
 
   <!-- SyntaxHighlighter JavaScript

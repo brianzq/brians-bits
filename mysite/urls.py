@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^', include('mysite.apps.personal.urls', namespace='personal')),
     url(r'^blog/', include('mysite.apps.blog.urls')),
     url(r'^projects/', include('mysite.apps.projects.urls')),
+    # url(r'^tags/', include('mysite.apps.tags.urls')),
 ]
