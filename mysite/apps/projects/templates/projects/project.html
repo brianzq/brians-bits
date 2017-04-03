@@ -1,15 +1,21 @@
 {% extends 'personal/header.html' %}
 {% load staticfiles %}
+
+<!-- Extra head block-->
 {% block extra_head %}
-  <link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
+<link rel="stylesheet" href="{% static 'css/theme.css' %}" type="text/css"/>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 {% endblock extra_head %}
+
+<!-- Content block -->
 {% block content %}
-  <container id="post">
+  <div class="slide-down-fade-in post">
     <p class="post-title">{{ project.title }}</p>
     <p class="post-date text-muted lead">on {{ project.pub_date }}</p>
-    <br>
-    {{ project.body|safe|linebreaks }}
-  </container>
+    {{ project.body|safe }}
+  </div>
 
   <!-- SyntaxHighlighter JavaScript
     ================================================== -->  
@@ -19,4 +25,5 @@
       className: 'eclipse'
     };
   </script>
-{% endblock %}
+
+{% endblock content %}

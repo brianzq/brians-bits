@@ -252,12 +252,15 @@ a.brand:hover {
   height: 1px;
 }
 /*------------- post --------------*/
-#post .post-title {
+.post {
+  padding: 0px 15px;
+}
+.post-title {
   text-align: center;
   font-size: 1.6em;
   margin-bottom: 12px;
 }
-#post .post-date {
+.post-date {
   text-align: center;
   font-size: 1em;
 }

@@ -11,19 +11,11 @@
 
 <!-- Content block -->
 {% block content %}
-  <container id="post">
-    <div class="col-xs-12 col-md-12 col-lg-12">
-      <p class="post-title">{{ post.title }}</p>
-      <p class="post-date text-muted lead">on {{ post.pub_date }}</p>
-    </div>
-    <div class="col-xs-0 col-md-2 col-lg-2"></div>
-    <div class="col-xs-12 col-md-8 col-lg-8">
-
-      <br>
-      {{ post.body|safe }}
-    </div>
-    <div class="col-xs-0 col-md-2 col-lg-2"></div>
-  </container>
+  <div class="slide-down-fade-in post">
+    <p class="post-title">{{ post.title }}</p>
+    <p class="post-date text-muted lead">on {{ post.pub_date }}</p>
+    {{ post.body|safe }}
+  </div>
 
   <!-- SyntaxHighlighter JavaScript
     ================================================== -->  
