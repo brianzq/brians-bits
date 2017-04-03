@@ -3,12 +3,11 @@
 {% block content %}
   <div class="slide-down-fade-in">
     {% for project in object_list %}
-      <div class="col-md-6 col-lg-6 text-center">
-        <a class="projects-index-img" href="/projects/{{project.id}}" target="_blank">
+      <div class="col-md-6 col-lg-6 text-center project-display">
+        <a class="projects-index-img" href="/projects/{{project.id}}">
           <p><img src="{% static project.img.url %}" id="projects-index-img" class="img-responsive img-rounded"></p>
         </a>
-          <br>
-        <p class="blog-title"> {{ project.title }} </p>
+        <p class="blog-title project-title" style="margin-bottom: 0px"> {{ project.title }} </p>
         <p class="blog-desc"> {{ project.desc }} </p>
       </div>
     {% endfor %}

@@ -268,13 +268,19 @@ a.brand:hover {
 
 /*------------- projects-index --------------*/
 .projects-index-img img {
-  margin: 0px auto 10px auto;
+  margin: 0px auto 20px auto;
   width: 240px;
   height: 180px;
   border: 2px solid #AE0118;
 }
 .projects-index-img:hover img {
   opacity: .65;
+}
+.project-display {
+  margin-bottom: 30px;
+}
+.project-title p {
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .projects-index-img img{
