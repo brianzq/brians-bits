@@ -1,5 +1,5 @@
 {% extends "personal/header.html" %}
-<!-- {% load staticfiles %} -->
+{% load staticfiles %}
 {% block content %}
   <div id="home-block">
     <div class="col-sm-12 col-md-4 col-lg-4">
@@ -19,4 +19,7 @@
     </div>
     <div class="col-sm-1 hidden-md hidden-lg"></div>
   </div>
-{% endblock %}
+{% endblock content %}
+{% block extra_script %}
+  <script src="{% static 'js/home.js' %}"></script>
+{% endblock extra_script %}

@@ -10,6 +10,11 @@
   src: url('../fonts/Chunk\ Five\ Print.otf');
   }
 
+html.fa-events-icons-loading body,
+html.fa-events-typefaces-lato-loading body,
+html.fa-events-typefaces-orbitron-loading body {
+  display: none;
+}
 /*------------- global --------------*/
 a {
   color: #AE0118;
@@ -53,6 +58,12 @@ h5 {
   margin-top: 20px;
 }
 
+code {
+  background-color: inherit;
+  color: inherit;
+  font-size: 1em;
+  font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
+}
 .float-right {
   float: right;
 }

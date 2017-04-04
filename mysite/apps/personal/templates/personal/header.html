@@ -59,7 +59,7 @@
 
     <!-- <div class="starter-template"> -->
       {% block content %}
-      {% endblock %}
+      {% endblock content %}
     <!-- </div> -->
 
   </div>
@@ -83,7 +83,8 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
-  {% block extra_script %}{% endblock extra_script %}
+  {% block extra_script %}
+  {% endblock extra_script %}
 </body>
 
 </html>
