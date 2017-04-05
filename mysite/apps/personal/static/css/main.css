@@ -91,17 +91,19 @@ code {
   font-family: 'ChunkFive';
   float: none;
   display: block;
-  height: 50px;
+  height: 70px;
   text-align: center;
   font-size: 2em;
   margin-top: 10px;
   margin-bottom: 10px;
+  vertical-align: center;
 }
 a.brand:hover {
   text-decoration: none;
 }
 .brand .brand-brians {
   color: #4C4C4C;
+  margin-right: 5px
 }
 .brand .brand-bits {
   color: #AE0118;
