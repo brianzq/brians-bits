@@ -222,10 +222,14 @@ a.brand:hover {
 
 /*------------- footer --------------*/
 #footer {
-  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
+  margin-top: 0px !important;
   margin-bottom: 10px;
   text-align: center;
   padding-bottom: 15px;
+  display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
   #footer {
