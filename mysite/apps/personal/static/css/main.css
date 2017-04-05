@@ -108,6 +108,21 @@ a.brand:hover {
 .brand .brand-bits {
   color: #AE0118;
 }
+.brand .logo {
+  display: inline-block;
+  margin-right:-5px
+}
+.flippy img {
+  -moz-transform:scale(1,1);-webkit-transform:scale(1,1);
+  transform:scale(1,1);
+  -webkit-transition:all 500ms ease;-webkit-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+.flippy:hover img {
+  -moz-transform:scale(-1,1);-webkit-transform:scale(-1,1);
+  transform:scale(-1,1);
+}
 
 /*------------- navbar --------------*/
 .nav {
