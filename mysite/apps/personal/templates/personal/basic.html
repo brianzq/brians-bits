@@ -1,5 +1,4 @@
 {% extends "personal/header.html" %}
-{% load staticfiles %}
 {% block content %}
     <div class="slide-down-fade-in">
         {% for c in content %}
@@ -7,7 +6,3 @@
         {% endfor %}
     </div>
 {% endblock content %}
-
-{% block extra_script %}
-  <script src="{% static 'js/blog.js' %}"></script>
-{% endblock extra_script %}
