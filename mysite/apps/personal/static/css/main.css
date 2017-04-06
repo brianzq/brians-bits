@@ -10,11 +10,6 @@
   src: url('../fonts/Chunk\ Five\ Print.otf');
   }
 
-html.fa-events-icons-loading body,
-html.fa-events-typefaces-lato-loading body,
-html.fa-events-typefaces-orbitron-loading body {
-  display: none;
-}
 /*------------- global --------------*/
 a {
   color: #AE0118;
@@ -34,7 +29,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    font-size: 17px;
+    font-size: 16px;
   }
   .content {
     max-width: 860px;
@@ -113,6 +108,7 @@ a.brand:hover {
   margin-right:-5px
 }
 .flippy img {
+  outline: 1px solid transparent;
   -moz-transform:scale(1,1);-webkit-transform:scale(1,1);
   transform:scale(1,1);
   -webkit-transition:all 500ms ease;-webkit-transition:all 500ms ease;
@@ -222,9 +218,6 @@ a.brand:hover {
 
 /*------------- footer --------------*/
 #footer {
-  position: absolute;
-  bottom: 0;
-  margin-top: 0px !important;
   margin-bottom: 10px;
   text-align: center;
   padding-bottom: 15px;
@@ -248,6 +241,9 @@ a.brand:hover {
   color: #C07B84;
 }
 /*------------- blog --------------*/
+.slide-down-fade-in {
+  opacity: 0;
+}
 .blog-title {
   font-size: 1.2em;
   color: #AE0118;
