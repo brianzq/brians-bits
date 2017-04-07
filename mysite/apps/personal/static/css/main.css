@@ -239,7 +239,7 @@ a.brand:hover {
     padding-bottom: 30px;
   }
   #footer > .social {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 /*------------- blog --------------*/
@@ -284,6 +284,7 @@ a.brand:hover {
 /*------------- post --------------*/
 .post {
   padding: 0px 15px;
+  margin-bottom: 40px;
 }
 .post-title {
   text-align: center;
@@ -297,6 +298,9 @@ a.brand:hover {
 .monospace {
   font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
   color: #666;
+}
+.post-body {
+  margin-top: 30px;
 }
 
 /*------------- projects-index --------------*/
