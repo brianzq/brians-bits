@@ -225,21 +225,23 @@ a.brand:hover {
   display: block;
   width: 100%;
 }
-@media (min-width: 768px) {
-  #footer {
-    padding-bottom: 30px;
-  }
-}
 #footer > .social {
-  font-size: 18px;
+  font-size: 14px;
 }
 #footer > .copyright {
-  font-size: 16px;
   color: #4C4C4C;
 }
 #footer i {
   color: #101010;
 } 
+@media (min-width: 768px) {
+  #footer {
+    padding-bottom: 30px;
+  }
+  #footer > .social {
+    font-size: 18px;
+  }
+}
 /*------------- blog --------------*/
 .slide-down-fade-in {
   opacity: 0;
