@@ -218,6 +218,7 @@ a.brand:hover {
 
 /*------------- footer --------------*/
 #footer {
+  font-family: 'Molengo', sans-serif;
   margin-bottom: 10px;
   text-align: center;
   padding-bottom: 15px;
@@ -229,17 +230,16 @@ a.brand:hover {
     padding-bottom: 30px;
   }
 }
-#footer i {
-  font-size: 1em;
+#footer > .social {
+  font-size: 18px;
+}
+#footer > .copyright {
+  font-size: 16px;
   color: #4C4C4C;
 }
-#footer a {
-  font-family: 'Molengo', sans-serif;
-  color: #AE0118;
-}
-#footer a:hover {
-  color: #C07B84;
-}
+#footer i {
+  color: #101010;
+} 
 /*------------- blog --------------*/
 .slide-down-fade-in {
   opacity: 0;
