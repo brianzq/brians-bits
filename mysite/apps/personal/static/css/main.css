@@ -329,6 +329,11 @@ a.brand:hover {
 /*------------- projects --------------*/
 .project-img {
   margin: 0px auto 20px auto;
-  max-width: 480px;
+  width: 80%;
   border: 2px solid #AE0118;
+}
+@media (min-width: 768px) {
+  .project-img {
+    max-width: 480px;
+  }
 }
