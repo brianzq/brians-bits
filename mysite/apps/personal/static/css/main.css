@@ -304,13 +304,13 @@ a.brand:hover {
 }
 
 /*------------- projects-index --------------*/
-.projects-index-img img {
+.projects-index-img {
   margin: 0px auto 20px auto;
   width: 240px;
   height: 180px;
   border: 2px solid #AE0118;
 }
-.projects-index-img:hover img {
+.projects-index-img:hover {
   opacity: .65;
 }
 .project-display {
@@ -320,8 +320,15 @@ a.brand:hover {
   margin-bottom: 0px;
 }
 @media (min-width: 768px) {
-  .projects-index-img img{
+  .projects-index-img {
     width: 320px;
     height: 240px;
   }
+}
+
+/*------------- projects --------------*/
+.project-img {
+  margin: 0px auto 20px auto;
+  max-width: 480px;
+  border: 2px solid #AE0118;
 }
