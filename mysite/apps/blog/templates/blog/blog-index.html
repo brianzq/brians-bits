@@ -4,7 +4,7 @@
     <div class="col-xs-0 col-md-1 col-lg-1"></div>
     <div class="col-xs-12 col-md-10 col-lg-10">
       {% for post in object_list %}
-        <p class="blog-title"><a href="/blog/{{ post.id }}"> {{ post.title }} </a></p>
+        <p class="blog-title"><a href="/blog/{{ post.id }}/{{ post.slug }}"> {{ post.title }} </a></p>
         <p class="blog-desc"> {{ post.desc }} </p>
         <div class="small-light">
           <span class="blog-title-date"> {{ post.pub_date|date:'Y-m-d' }} </span>

@@ -6,8 +6,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         'django==1.10.3',
-        'pillow==4.0.0',
         'django-taggit==0.22.0',
+        'pillow==4.0.0',
     ],
     package_data={
         'mysite': ['db.sqlite3'],

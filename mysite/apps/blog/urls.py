@@ -16,13 +16,14 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.views.generic import ListView, DetailView
 from mysite.apps.blog.models import Post
-import mysite.apps.blog.views as views
+from mysite.apps.blog.views import PostDetailView, PostDetailRedirect
 
 urlpatterns = [
-    url(r'^$', ListView.as_view(
-        queryset=Post.objects.all().order_by('-pub_date')[:25],
-        template_name='blog/blog-index.html'
-    )),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Post,
-                                             template_name='blog/post.html'))
+    url(r'^$',
+        ListView.as_view(queryset=Post.objects.all().order_by('-pub_date')[:25],
+                         template_name='blog/blog-index.html')),
+    url(r'^(?P<pk>\d+)/?$',
+        PostDetailRedirect.as_view()),
+    url(r'^(?P<pk>\d+)/(?P<slug>[-\w\d]+)/?$',
+        PostDetailView.as_view(template_name='blog/post.html'), name='post')
 ]

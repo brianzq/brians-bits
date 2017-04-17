@@ -16,10 +16,15 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.views.generic import ListView, DetailView
 from mysite.apps.projects.models import Project
+from mysite.apps.projects.views import ProjectDetailView, ProjectDetailRedirect
 
 
 urlpatterns = [
-    url(r'^$', ListView.as_view(queryset=Project.objects.all().order_by('-pub_date')[:25],
-                                template_name='projects/projects-index.html')),
-    url(r'^(?P<pk>\d+)$', DetailView.as_view(model=Project, template_name='projects/project.html'))
+    url(r'^$',
+        ListView.as_view(queryset=Project.objects.all().order_by('-pub_date')[:25],
+                         template_name='projects/projects-index.html')),
+    url(r'^(?P<pk>\d+)/?$',
+        ProjectDetailRedirect.as_view(), name='project'),
+    url(r'^(?P<pk>\d+)/(?P<slug>[-\w\d]+)/?$',
+        ProjectDetailView.as_view(template_name='projects/project.html'), name='project'),
 ]
