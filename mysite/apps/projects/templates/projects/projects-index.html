@@ -7,9 +7,9 @@
         <a href="/projects/{{project.id}}">
           <p><img src="{% static project.img.url %}" class="projects-index-img img-responsive img-rounded"></p>
         </a>
-        <p class="blog-title project-title" style="margin-bottom: 0px">
+        <p class="project-title blog-title">
         <a href="/projects/{{project.id}}">{{ project.title }}</a></p>
-        <p class="blog-desc"> {{ project.desc }} </p>
+        <p class="project-desc blog-desc"> {{ project.desc }} </p>
       </div>
     {% endfor %}
   </div>

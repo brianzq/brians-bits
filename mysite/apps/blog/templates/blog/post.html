@@ -12,7 +12,7 @@
 <!-- Content block -->
 {% block content %}
   <div class="slide-down-fade-in post">
-    <p class="post-title">{{ post.title }}</p>
+    <h2 class="post-title">{{ post.title }}</h2>
     <p class="post-date text-muted lead">on {{ post.pub_date }}</p>
     <div class="post-body">
       {{ post.body|safe }}

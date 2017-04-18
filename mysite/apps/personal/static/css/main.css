@@ -17,7 +17,6 @@ a {
 a:hover {
   color: #C07B84;
 }
-
 body {
   font-family: 'Lato', sans-serif;
   background-color: #efefef;
@@ -25,6 +24,45 @@ body {
   padding-top: 20px;
   font-size: 14px;
   line-height: 1.6em;
+}
+.content {
+  margin-top: 20px;
+}
+
+/* headers */
+h2 {
+  font-size: 22px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  line-height: 1.4em;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  line-height: 1.4em;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.4em;
+}
+h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 1.4em;
+}
+
+code {
+  background-color: inherit;
+  color: inherit;
+  /*font-size: 16px;*/
+  font-size: inherit;
+  font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
+}
+.float-right {
+  float: right;
 }
 
 @media (min-width: 768px) {
@@ -34,38 +72,24 @@ body {
   .content {
     max-width: 860px;
   }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 992px) {
   .content {
-    margin-top: 50px;
+    margin-top: 30px;
   }
-}
-
-/* headers */
-h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-h4 {
-  margin-top: 20px;
-}
-h5 {
-  margin-top: 20px;
-}
-
-code {
-  background-color: inherit;
-  color: inherit;
-  font-size: 1em;
-  font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
-}
-.float-right {
-  float: right;
 }
 
 /*------------- home --------------*/
@@ -93,8 +117,8 @@ code {
   display: block;
   height: 70px;
   text-align: center;
-  font-size: 2em;
-  margin-top: 10px;
+  font-size: 28px;
+  margin-top: 20px;
   margin-bottom: 10px;
   vertical-align: center;
 }
@@ -126,6 +150,9 @@ a.brand:hover {
 }
 
 /*------------- navbar --------------*/
+.navbar {
+  margin-bottom: 0px;
+}
 .nav {
   font-family: 'Molengo', sans-serif;
 }
@@ -154,7 +181,7 @@ a.brand:hover {
 #nav-menu-toggle::before {
   content: "Menu";
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 12px;
   float: left;
   margin-top: -3px;
   color: #4C4C4C;
@@ -189,7 +216,7 @@ a.brand:hover {
 #nav-menu li a {
   color: inherit;
   font-weight: 300;
-  font-size: 1.05em;
+  font-size: 15px;
   padding: 8px 5px;
   margin: 0px 10px;
   background-color: transparent;
@@ -210,7 +237,7 @@ a.brand:hover {
     margin-bottom: 0px;
   }
   #nav-menu li a {
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: 400;
   }
   #nav-menu li.active a {
@@ -252,14 +279,14 @@ a.brand:hover {
   opacity: 0;
 }
 .blog-title {
-  font-size: 1.2em;
+  font-size: 16px;
   color: #AE0118;
 }
 .blog-desc {
   color: #3C3C3C
 }
 .small-light {
-  font-size: 0.8em;
+  font-size: 12px;
   color: #6C6C6C;
 }
 .blog-title-date {
@@ -280,6 +307,9 @@ a.brand:hover {
   .blog-title-sep {
     margin: 0px 20px;
   }
+  .blog-title {
+    font-size: 20px;
+  }
 }
 .hline {
   min-width: 85%;
@@ -293,12 +323,13 @@ a.brand:hover {
 }
 .post-title {
   text-align: center;
-  font-size: 1.8em;
+  line-height: 1.5em;
+  margin-top: 0px;
   margin-bottom: 12px;
 }
 .post-date {
   text-align: center;
-  font-size: 1em;
+  font-size: 12px;
 }
 .monospace {
   font-family: "ubuntu mono", consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace !important;
@@ -308,9 +339,17 @@ a.brand:hover {
   margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+/*  .post-title {
+    font-size: 24px;  
+  }
+  .post-date {
+    font-size: 16px;
+  }*/
+}
 /*------------- projects-index --------------*/
 .projects-index-img {
-  margin: 0px auto 20px auto;
+  margin: 0px auto 15px auto;
   width: 240px;
   height: 180px;
   border: 2px solid #AE0118;
@@ -319,15 +358,24 @@ a.brand:hover {
   opacity: .65;
 }
 .project-display {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
-.project-title p {
-  margin-bottom: 0px;
+.project-title {
+  margin-bottom: 5px;
+}
+.project-desc {
+  display: inline-block;
+  text-align: center;
+  max-width: 360px
 }
 @media (min-width: 768px) {
   .projects-index-img {
     width: 320px;
     height: 240px;
+  }
+  .project-title {
+    margin-bottom: 10px;
   }
 }
 

@@ -12,7 +12,7 @@
 <!-- Content block -->
 {% block content %}
   <div class="slide-down-fade-in post">
-    <p class="post-title">{{ project.title }}</p>
+    <h2 class="post-title">{{ project.title }}</h2>
     <p class="post-date text-muted lead">on {{ project.pub_date }}</p>
     <p><img src="{% static project.img.url %}" class="project-img img-responsive img-rounded"></p>
     <div class="post-body">
